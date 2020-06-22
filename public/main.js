@@ -85,7 +85,12 @@ const trapdrums = new Howl(
 );
 
 const drumpads = document.querySelector('.drumpads');
-const drumkit = document.getElementById('dropdown-list').value
+// const drumkit = document.getElementById('dropdown-list').value
+
+function setViewportHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty(--vh, `${vh}px`);
+}
 
 function getDrumkitValue() {
   drumOptions = document.getElementById('dropdown-list');
@@ -103,5 +108,6 @@ function playDrum(event) {
   }
 };
 
+window.addEventListener('resize', setViewportHeight)
 drumpads.addEventListener('click', playDrum);
 drumpads.addEventListener('touchstart', playDrum);
