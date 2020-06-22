@@ -4,36 +4,44 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='styles.css'>
-  <title>JS Drumpad</title>
+  <title>make-cool-beats</title>
 </head>
-<body>
-  <h1>JS DRUMPAD</h1>
-  <div class='drumpads'>
-    <div class="pad">
-      <p>Kick</p>
+<body id='page-body'>
+    <div class='header'>
+      <h1 class='title'>make cool beats</h1>
+      <select id='dropdown-list'>
+        <option value='lofidrums'>lofi</option>
+        <option value='trapdrums'>trap</option>
+      </select>
+      <button class='load-samples-button' onclick='getDrumkitValue()'>load drumkit</button>
     </div>
-    <div class="pad">
-      <p>Open Hat</p>
+    <div class='drumpads'>
+      <div class='pad' data-sound='kick'>
+        <p>kick</p>
+      </div>
+      <div class='pad' data-sound='openhat'>
+        <p>open hat</p>
+      </div>
+      <div class='pad' data-sound='crash'>
+        <p>crash</p>
+      </div>
+      <div class='pad' data-sound='sample1'>
+        <p>sample 1</p>
+      </div>
+      <div class='pad' data-sound='snare1'>
+        <p>snare</p>
+      </div>
+      <div class='pad' data-sound='snare2'>
+        <p>snare 2</p>
+      </div>
+      <div class='pad' data-sound='closedhat'>
+        <p>hi hat</p>
+      </div>
+      <div class='pad' data-sound='sample2'>
+        <p>sample 2</p>
+      </div>
     </div>
-    <div class="pad">
-      <p>Crash</p>
-    </div>
-    <div class="pad">
-      <p>Sample 1</p>
-    </div>
-    <div class="pad">
-      <p>Snare</p>
-    </div>
-    <div class="pad">
-      <p>Snare 2</p>
-    </div>
-    <div class="pad">
-      <p>Hi Hat</p>
-    </div>
-    <div class="pad">
-      <p>Sample 2</p>
-    </div>
-  </div>
-  <script href='./main.js'></script>
+  <script src='howler.min.js'></script>
+  <script src='main.js'></script>
 </body>
-</html>
+</html> 
