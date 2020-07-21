@@ -90,12 +90,13 @@ const drumpads = document.querySelector('.drumpads');
 function setViewportHeight() {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty(--vh, `${vh}px`);
-  console.log(vh)
-}
+};
 
 function getDrumkitValue() {
+  event.preventDefault();
   drumOptions = document.getElementById('dropdown-list');
   drumChoice = drumOptions.options[drumOptions.selectedIndex].value;
+  console.log(drumChoice)
 };
 
 function playDrum(event) {
@@ -103,7 +104,8 @@ function playDrum(event) {
     event.preventDefault();
     let sound = event.target.dataset.sound;
     if (drumChoice === 'lofidrums') {
-      lofidrums.play(sound)
+      lofidrums.play(sound);
+      console.log(sound);
     }
     else (trapdrums.play(sound));
   }
@@ -117,5 +119,3 @@ loadSamplesButton.addEventListener('click', getDrumkitValue);
 loadSamplesButton.addEventListener('touchstart', getDrumkitValue);
 drumpads.addEventListener('mousedown', playDrum);
 drumpads.addEventListener('touchstart', playDrum);
-
- 

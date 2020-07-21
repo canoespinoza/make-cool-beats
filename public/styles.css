@@ -21,18 +21,19 @@
   color: rgb(231, 200, 192);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   text-shadow: 0 0 1rem black, 0 0 1rem black;
+  margin: 1rem;
 }
 
 .subtitle {
   color: rgb(231, 200, 192);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bolder;
-  text-shadow: 0 0 1rem black, 0 0 1rem black;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .load-samples-button {
@@ -94,4 +95,10 @@ p {
   text-align: center;
   grid-area: 1 / 1 / 2 / 2;
   pointer-events: none;
+}
+
+@media screen and (max-width: 850px) {
+  .subtitle {
+    display: none;
+  }
 }
