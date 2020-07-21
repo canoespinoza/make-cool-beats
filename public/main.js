@@ -84,12 +84,13 @@ const trapdrums = new Howl(
   }
 );
 
+const loadSamplesButton = document.querySelector('.load-samples-button');
 const drumpads = document.querySelector('.drumpads');
-// const drumkit = document.getElementById('dropdown-list').value
 
 function setViewportHeight() {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty(--vh, `${vh}px`);
+  console.log(vh)
 }
 
 function getDrumkitValue() {
@@ -108,6 +109,13 @@ function playDrum(event) {
   }
 };
 
-window.addEventListener('resize', setViewportHeight)
-drumpads.addEventListener('click', playDrum);
+setViewportHeight();
+window.addEventListener('resize', () => {
+  setTimeout(setViewportHeight, 100)
+});
+loadSamplesButton.addEventListener('click', getDrumkitValue);
+loadSamplesButton.addEventListener('touchstart', getDrumkitValue);
+drumpads.addEventListener('mousedown', playDrum);
 drumpads.addEventListener('touchstart', playDrum);
+
+ 
