@@ -1,11 +1,11 @@
 # make cool beats
-Mobile-first drumpad for loading samples and MAKING COOL BEATS! 
+Mobile-first drumpad MAKING COOL BEATS! 
 
 ## technologies
-Howler.js
-CSS Grid
+-Howler.js
+-CSS Grid
 
-### HAVE SOME FUN!
+### have some fun!
 available for use at [makecoolbeats.com](www.makecoolbeats.com)
 
 I will be continuously adding new drum packs!
