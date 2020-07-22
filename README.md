@@ -6,7 +6,7 @@ Mobile-first drumpad for MAKING COOL BEATS!
 - CSS Grid
 
 ### have some fun!
-available for use at makecoolbeats.com
+available for use at www.makecoolbeats.com
 
 I will be continuously adding new drum packs!
 Shoutout to Cymatics for the :fire: samples!
