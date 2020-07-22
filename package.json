@@ -1,5 +1,5 @@
 {
-  "name": "js-drumpad",
+  "name": "make-cool-beats",
   "version": "1.0.0",
   "description": "Drumpad for loading samples and making beats",
   "main": "server/index.js",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/canoespinoza/js-drumpad.git"
+    "url": "git+https://github.com/canoespinoza/make-cool-beats.git"
   },
   "author": "cano.espinoza44@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/canoespinoza/js-drumpad/issues"
+    "url": "https://github.com/canoespinoza/make-cool-beats/issues"
   },
-  "homepage": "https://github.com/canoespinoza/js-drumpad"
+  "homepage": "https://github.com/canoespinoza/make-cool-beats"
 }
