@@ -2,8 +2,8 @@
 Mobile-first drumpad MAKING COOL BEATS! 
 
 ## technologies
--Howler.js
--CSS Grid
+- Howler.js
+- CSS Grid
 
 ### have some fun!
 available for use at [makecoolbeats.com](www.makecoolbeats.com)
