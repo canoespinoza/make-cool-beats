@@ -1,5 +1,5 @@
 #page-body {
-  background-image: url(https://cdn.spacetelescope.org/archives/images/screen/heic1509a.jpg);
+  background-image: url('/images/space-bg.webp');
   display: flex;
   flex-direction: column;
 }
